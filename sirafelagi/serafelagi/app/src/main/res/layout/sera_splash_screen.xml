@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="multiply"
+    android:orientation="vertical"
+    android:background="@color/colorCyanDarken"
+    tools:context="com.abewkayew.serafelagi.SeraSplashScreen">
+    <TextView
+        android:id="@+id/splash_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sera Felagi"
+        android:textSize="30dp"
+        android:layout_marginTop="125dp"
+        android:padding="100dp"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="POWERED BY"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:text="Sera-Felagi Tech Team"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/progressBar"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:visibility="visible"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+</LinearLayout>

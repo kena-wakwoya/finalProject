@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:enabled="true"
+        android:background="@drawable/hiring">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_home"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/person_profile"
+            android:title="profile" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Notifications"/>
+        <item
+            android:id="@+id/nav_applied_jobs"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Jobs applied"
+            />
+        <item
+            android:id="@+id/nav_chagePassword"
+            android:icon="@drawable/key_one"
+            android:title="change password" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_one"
+                android:title="logout" />
+        </menu>
+    </item>
+
+</menu>

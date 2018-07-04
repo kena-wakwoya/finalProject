@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <tabs>
+        <tab
+            id="@+id/tab_new_jobs"
+            title="New jobs"
+            icon="@drawable/ic_home"
+            activeColor="@color/apply_button_textColor"
+            />
+        <tab
+            id="@+id/tab_recent_jobs"
+            title="Recent jobs"
+            icon="@drawable/ic_recent"
+            activeColor="@color/apply_button_textColor" />
+        <tab
+            id="@+id/tab_most_visited"
+            title="most visited"
+            icon="@drawable/ic_most_visited"
+            activeColor="@color/apply_button_textColor"/>
+    </tabs>
+
+</PreferenceScreen>

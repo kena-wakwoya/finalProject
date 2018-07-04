@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/four"
+        app:civ_border_color="@android:color/primary_text_light"
+        app:civ_border_width="3dp"
+        android:id="@+id/slide_image_one"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/slide_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exam preparation"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/slide_image_one"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/slide_desc"
+        android:text="@string/slide_one_desc"
+        android:layout_below="@+id/slide_heading"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:lineSpacingMultiplier="1.5"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>

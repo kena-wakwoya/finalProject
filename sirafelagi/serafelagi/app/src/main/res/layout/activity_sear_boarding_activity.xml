@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCyanDarken"
+    tools:context="com.abewkayew.serafelagi.sera_boarding_activity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/slideViewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/dotsLayout"
+        android:layout_alignParentStart="true">
+
+    </android.support.v4.view.ViewPager>
+    <Button
+        android:id="@+id/prevButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dotsLayout"
+        android:layout_below="@id/slideViewPage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="60dp"
+        android:text="NEXT"
+        android:background="@color/colorCyanDarken"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/dotsLayout"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dotsLayout"
+        android:layout_below="@id/slideViewPage"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="60dp"
+        android:background="@color/colorCyanDarken"
+        android:text="NEXT"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

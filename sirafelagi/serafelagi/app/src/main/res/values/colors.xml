@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#37474f</color>
+    <color name="colorPrimaryDark">#455a64</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="startBlue">#546e7a</color>
+    <color name="endBlue">#263238</color>
+    <color name="apply_job_button">#ffc400</color>
+    <color name="apply_button_textColor">#ffffff</color>
+    <color name="separator">#e0e0e0</color>
+    <color name="colorBlack">#000000</color>
+    <color name="cardBackgroundColor">#eceff1</color>
+    <color name="color_separator_new">#616161</color>
+    <color name="colorCyanDarken">#00838f</color>
+    <color name="colorCyanDarkenModified">#0097a7</color>
+    <color name="colorTealDarken">#00695c</color>
+    <color name="colorWhite">#fff</color>
+    <color name="centerColor">#90a4ae</color>
+</resources>

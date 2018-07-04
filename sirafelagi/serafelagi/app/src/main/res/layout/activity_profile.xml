@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/apply_button_textColor"
+    android:orientation="vertical"
+    tools:context="com.abewkayew.serafelagi.Profile">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/gradientbackground"
+            android:orientation="vertical"
+            android:id="@+id/profile_background_layout_person">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:src="@drawable/four"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="3dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="click image to change profile picture"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorWhite"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/sera_usernameProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Abebe Kayimo"
+                android:textColor="@android:color/white"
+                android:textSize="21dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="210dp"
+            app:cardElevation="10dp"
+            android:id="@+id/cardView_profile">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jobs"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="45"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/startBlue"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Applied"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="27"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/startBlue"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Success"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/startBlue"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+   </android.support.v4.widget.NestedScrollView>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+               android:layout_width="340dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:layout_marginTop="30dp"
+               android:orientation="vertical">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingBottom="10dp"
+                   android:paddingLeft="30dp"
+                   android:weightSum="4">
+
+                   <ImageView
+                       android:layout_width="0dp"
+                       android:layout_height="36dp"
+                       android:layout_weight="1"
+                       android:src="@drawable/ic_account_circle_black_24dp" />
+
+                   <com.rengwuxian.materialedittext.MaterialEditText
+                       android:id="@+id/userAccountName"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_vertical"
+                       android:layout_weight="3"
+                       android:paddingLeft="20dp"
+                       android:text="abewkayew" />
+               </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingBottom="10dp"
+               android:paddingLeft="30dp"
+               android:weightSum="4">
+
+               <ImageView
+                   android:layout_width="0dp"
+                   android:layout_height="36dp"
+                   android:layout_weight="1"
+                   android:src="@drawable/ic_smartphone" />
+
+               <com.rengwuxian.materialedittext.MaterialEditText
+                   android:id="@+id/userPhone"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:layout_weight="3"
+                   android:paddingLeft="20dp"
+                   android:text="+251946556085" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingBottom="10dp"
+               android:paddingLeft="30dp"
+               android:weightSum="4">
+               <ImageView
+                   android:layout_width="0dp"
+                   android:layout_height="36dp"
+                   android:layout_weight="1"
+                   android:src="@drawable/ic_email" />
+
+               <com.rengwuxian.materialedittext.MaterialEditText
+                   android:id="@+id/userEmail"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:layout_weight="3"
+                   android:paddingLeft="20dp"
+                   android:text="abew@l.com" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingLeft="30dp"
+               android:paddingBottom="10dp"
+               android:weightSum="4">
+
+               <ImageView
+                   android:layout_width="0dp"
+                   android:layout_height="36dp"
+                   android:layout_weight="1"
+                   android:src="@drawable/ic_date_range" />
+
+               <com.rengwuxian.materialedittext.MaterialEditText
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:layout_weight="3"
+                   android:paddingLeft="20dp"
+                   android:text="25/04/1970" />
+           </LinearLayout>
+
+           <Button
+               android:id="@+id/updateProfileButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="26dp"
+               android:layout_marginBottom="38dp"
+               android:background="@color/endBlue"
+               android:paddingLeft="20dp"
+               android:paddingRight="20dp"
+               android:text="Update profile"
+               android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+               android:textColor="@color/colorWhite"
+               android:textSize="20sp" />
+           </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

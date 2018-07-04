@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/job_animation_layout"
+    tools:context="com.abewkayew.serafelagi.CheckAnimationTest">
+    <ImageView
+        android:id="@+id/job_image_animation"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:transitionName="imageTransition"
+        android:src="@drawable/civil_one"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/job_title_animation"
+        android:layout_width="wrap_content"
+        android:transitionName="titleTransition"
+        android:layout_height="wrap_content"
+        android:text="Sera Felagi"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/job_image_animation"/>
+    <TextView
+        android:id="@+id/job_desc_animation"
+        android:layout_width="match_parent"
+        android:transitionName="descriptionTransition"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/job_title_animation"
+        android:text="This is the first job ever on this hitjob ever on this hitjob ever on this hitjob ever on this hitjob ever on this hitjob ever on this hitjob ever on this hitjob ever on this hitjob ever on this hitjob ever on this hit..."/>
+
+</RelativeLayout>

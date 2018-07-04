@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/loginLayout"
+    android:background="@color/colorCyanDarken"
+    tools:context="com.abewkayew.serafelagi.Login">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="check name"
+        android:id="@+id/check_name"
+        android:layout_marginTop="20dp"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/apply_button_textColor"
+        android:layout_marginTop="70dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="10dp"
+        android:textCursorDrawable="@color/colorWhite"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/username"
+        android:hint="username"
+        android:autofillHints="abewkayew"
+        app:met_baseColor="@color/colorWhite"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/colorWhite"
+        app:met_singleLineEllipsis="true"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="10dp"
+        android:textCursorDrawable="@color/colorWhite"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/userEmail"
+        android:hint="Email address"
+        android:layout_below="@+id/username"
+        android:autofillHints="abewkayew"
+        app:met_baseColor="@color/colorWhite"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/colorWhite"
+        app:met_singleLineEllipsis="true"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password1"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/userEmail"
+        app:met_baseColor="@color/colorWhite"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/colorWhite"
+        app:met_singleLineEllipsis="true"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/checkBoxRememberMe"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/password1"/>
+    <!--Login Progress bar....-->
+    <ProgressBar
+        android:id="@+id/login_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/checkBoxRememberMe"
+        android:visibility="gone"/>
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/login_progress_bar"
+            app:floating_background_color="@color/apply_job_button"
+            app:floating_title="Register"
+            app:floating_title_color="@android:color/white"
+            />
+    <ru.dimorinny.floatingtextbutton.FloatingTextButton
+        android:id="@+id/loginButtonFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:floating_background_color="@color/apply_job_button"
+        app:floating_title="Login with facebook"
+        app:floating_title_color="@android:color/white"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_new_user"
+            android:text="Member? Login"
+            android:layout_below="@id/loginButtonFacebook"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="35dp"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+</RelativeLayout>

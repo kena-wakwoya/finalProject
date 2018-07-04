@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abewkayew.serafelagi.StartExam">
+    <LinearLayout
+        android:id="@+id/cardViewStartExamLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorCyanDarken">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewStartExam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/colorCyanDarkenModified">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/view_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="The exam ends after"
+                android:visibility="visible"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/count_down_timer"
+                android:drawablePadding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:50"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="50sp"/>
+            <com.github.lzyzsd.circleprogress.ArcProgress
+                android:id="@+id/arc_progress"
+                android:background="@color/colorCyanDarkenModified"
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                app:arc_text_color="@color/colorWhite"
+                app:arc_suffix_text="sec"
+                app:arc_bottom_text_size="16sp"
+                app:arc_unfinished_color="@android:color/holo_red_light"
+                app:arc_finished_color="@color/colorWhite"/>
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/progressBar"
+                android:layout_weight="4"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:max="100"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorWhite"/>
+            <TextView
+                android:id="@+id/questionLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question Left: 28"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardViewStartExamLayout"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="50dp"
+        android:text="1."
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/cardViewStartExamLayout"
+        android:layout_marginBottom="16dp"
+        android:text="what is the correct acronym for DNA? What is the correct acronym for DNA?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/exam_finished_textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="End of the Exam..."
+        android:textSize="60dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/text_view_question">
+        <RadioButton
+            android:id="@+id/radio_button_question_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="First option"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radio_button_question_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Second option" />
+
+        <RadioButton
+            android:id="@+id/radio_button_question_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Third option" />
+
+        <RadioButton
+            android:id="@+id/radio_button_question_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Fourth option"/>
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/confirm_next_btn"
+        android:soundEffectsEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:text="CONFIRM"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorCyanDarken"/>
+    <Button
+        android:id="@+id/next_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="next"
+        android:background="@color/colorCyanDarken"
+        android:textColor="@color/colorWhite"
+        android:visibility="gone"/>
+</RelativeLayout>
